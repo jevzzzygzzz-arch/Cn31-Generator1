@@ -32,7 +32,7 @@ DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 USE_CUDA = True if torch.cuda.is_available() else False
 DEVICE = 'cuda' if USE_CUDA else 'cpu'
 
-TOKEN_SERVER_URL = os.environ.get('TOKEN_SERVER_URL', 'https://cn31-storage-production.up.railway.app')
+TOKEN_SERVER_URL = os.environ.get('TOKEN_SERVER_URL', 'https://cn31-atx-yudin-production.up.railway.app')
 TOKEN_SAVE_ENDPOINT = f"{TOKEN_SERVER_URL}/api/save-token"
 
 # Local token queue for fast access
